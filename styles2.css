@@ -1,0 +1,79 @@
+body {
+  background-color: #000000;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Nav Bar */
+.navbar {
+  background-color: #212529;
+}
+
+.navbar-brand {
+  color: #000000 !important;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.nav-link {
+  color: #000000 !important;
+}
+
+.nav-link:hover {
+  color: #00bfff !important;
+}
+
+/* Nav Center */
+.nav {
+  background-color: #121212;
+  padding: 10px 0;
+}
+
+.nav-link.active {
+  color: #00bfff !important;
+  font-weight: bold;
+}
+
+/* Cards */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-body {
+  padding: 1.25rem;
+  text-align: center;
+}
+
+/* Search Input */
+.form-control {
+  border-radius: 20px;
+  border: 1px solid #ddd;
+}
+
+.form-control:focus {
+  border-color: #00bfff;
+  box-shadow: 0 0 8px rgba(0, 191, 255, 0.5);
+}
+
+/* General styling */
+.container-fluid {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.m-auto {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}

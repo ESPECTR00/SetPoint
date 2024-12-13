@@ -1,0 +1,77 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "mysql"
+    url      = env("DATABASE_URL")
+}
+
+model Usuario {
+    idUsuario     Int      @id @default(autoincrement())
+    nome          String
+    email         String   @unique
+    senha         String
+    campFavorito  String?
+    perfil        Perfil?
+}
+
+model Perfil {
+    nomeUsuario   String   @id
+    FotoPerfil    Bytes?
+    idUsuario     Int      @unique
+    usuario       Usuario  @relation(fields: [idUsuario], references: [idUsuario])
+}
+
+model Noticia {
+    idNoticia     Int      @id @default(autoincrement())
+    imagemNoticia Bytes?
+    localSite     String
+    dataNoticia   DateTime
+}
+
+model Peneira {
+    idPeneira     Int      @id @default(autoincrement())
+    docNecessario String
+    itens         String
+    faixaEtaria   Int
+    localPeneiras String
+}
+
+model Calendario {
+    jogos         String   @id
+    dataJogo      DateTime
+    nomeTime      String
+}
+
+model Campeonato {
+    nomeCamp      String   @id
+    times         Time[]
+}
+
+model Jogador {
+    idJogador     Int      @id @default(autoincrement())
+    posicao       String
+    dataNasc      DateTime
+    altura        Float
+    peso          Float
+    times         Time[]
+}
+
+model Time {
+    nomeTime      String   @id
+    tecnico       String
+    titulos       String
+    estadio       String
+    idJogador     Int?
+    nomeCamp      String?
+    jogadores     Jogador?  @relation(fields: [idJogador], references: [idJogador])
+    campeonato    Campeonato? @relation(fields: [nomeCamp], references: [nomeCamp])
+}
+
