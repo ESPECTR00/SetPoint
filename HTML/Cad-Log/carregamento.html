@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetPoint</title>
+    <meta http-equiv="refresh" content="5;url=TelaInicial-BR">
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #212121;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .logo {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+
+        .loader-container {
+            position: absolute;
+            bottom: 20px;
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+            background-color: #212121;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .loading-text {
+            color: #282b2e;
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .progress-bar-background {
+            width: 100%;
+            height: 30px;
+            background-color: #282b2e;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 0;
+            background-color: #8c52ff;
+            border-radius: 15px;
+            animation: loadProgress 3s linear forwards;
+        }
+
+        @keyframes loadProgress {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+
+        .progress-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #212121;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="../../CSS/Imagens/icons/SetPoint-Logo.png" alt="Logo" class="logo">
+
+    <div class="loader-container">
+        <div class="progress-bar-background">
+            <div class="progress-bar">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        setTimeout(function() {
+            window.location.href = "../TelaInicio/TelaInicial-BR.html"; 
+        }, 3000); 
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contagem Regressiva de Dias</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        #timer {
+            font-size: 3em;
+            text-align: center;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="timer"></h1>
+
+    <script>
+        // Define a data final para a contagem regressiva
+        const targetDate = new Date("December 31, 2024").getTime();
+
+        function updateTimer() {
+            const currentDate = new Date().getTime();
+            const timeDifference = targetDate - currentDate;
+
+            // Calcula os dias restantes
+            const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+            // Exibe a contagem regressiva
+            document.getElementById("timer").innerText = `${days} dias`;
+
+            // Atualiza o timer a cada segundo
+            setTimeout(updateTimer, 1000);
+        }
+
+        updateTimer();
+    </script>
+</body>
+</html>

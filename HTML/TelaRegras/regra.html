@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SetPoint</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles2.scss">
+  </head>
+  <body style="background-color: #121212;">
+
+    <nav class="navbar fixed-top" style="background-color: #121212;" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../TelaInicio/TelaInicial-BR.html">
+          <img src="../../../CSS/Imagens/icons/SetPoint2.png" alt="Logo" width="185" height="45" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color: #121212;">
+          <div class="offcanvas-header" style="background-color: #8c52ff;">
+            <a  class="nav-link" href="../TelaPerfil/telaperfil.html">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="/CSS/Imagens/icons/Ícone_Perfil.png" alt="logo" width="70" height="70" class="d-inline-block align-text-center">
+              Rafael W. Maximo
+            </a>
+            </h5><br>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div><br>
+          <div class="offcanvas-body">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Destaques</h5><br>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../TelaInicio/TelaInicial-BR.html"><img src="../../../CSS/Imagens/icons/IconeDestaques.png" alt="logo" width="30" height="30" class="d-inline-block align-text-center"> Noticias recentes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="../../../CSS/Imagens/icons/IconeDestaques.png" alt="logo" width="30" height="30" class="d-inline-block align-text-center"> Olimpiadas 2024</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="../../../CSS/Imagens/icons/IconeDestaques.png" alt="logo" width="30" height="30" class="d-inline-block align-text-center"> Superliga Feminina</a>
+              </li><br>
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Categorias</h5><br>
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="../../../CSS/Imagens/icons/IconeTimes.png" alt="logo" width="32" height="30" class="d-inline-block align-text-center">
+                  Times Masculino
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../Times/TimesMASC/Sesi-Bauru-MASC.html"><img src="../../../CSS/Imagens/logoTimes/Sesi Bauru Masc.png" alt="img" width="35" height="32" class="d-inline-block align-text-center"> Sesi Bauru</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="../../../CSS/Imagens/logoTimes/Sada volei.png" alt="img" width="35" height="35" class="d-inline-block align-text-center"> Sada Cruzeiro</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="../../../CSS/Imagens/logoTimes/Minas.png" alt="img" width="34" height="31" class="d-inline-block align-text-center"> Itambé Minas</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="../../../CSS/Imagens/logoTimes/FarmaCondeVôlei.png" alt="img" width="35" height="31" class="d-inline-block align-text-center"> Farma Conde/São José</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="../../../CSS/Imagens/logoTimes/Joinville.png" alt="img" width="34" height="31" class="d-inline-block align-text-center"> Joinville</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="../../../CSS/Imagens/logoTimes/guarulhosVolei.png" alt="img" width="35" height="32" class="d-inline-block align-text-center"> Vedacit Guaraulhos</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="../../../CSS/Imagens/logoTimes/Araguari.png" alt="img" width="31" height="29" class="d-inline-block align-text-center"> ´Araguari Vôlei</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="../../../CSS/Imagens/logoTimes/Suzano.png" alt="img" width="35" height="30" class="d-inline-block align-text-center"> Suzano</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="../../../CSS/Imagens/logoTimes/APAN.png" alt="img" width="35" height="35" class="d-inline-block align-text-center"> APAN/Blumenau</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="../../../CSS/Imagens/logoTimes/volei renata.png" alt="img" width="32" height="29" class="d-inline-block align-text-center"> ´Vôlei Renata</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="../../../CSS/Imagens/logoTimes/Goias.webp" alt="img" width="31" height="29" class="d-inline-block align-text-center"> ´Goiás</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="../../../CSS/Imagens/logoTimes/neurologia.png" alt="img" width="31" height="29" class="d-inline-block align-text-center"> ´Neurologia Ativa/Goiânia</a></li>
+            </ul>
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="../../../CSS/Imagens/icons/IconeTimes.png" alt="logo" width="32" height="30" class="d-inline-block align-text-center">
+              Times Feminino
+            </a>
+            <ul class="dropdown-menu">
+              
+            <li><a class="dropdown-item" href="../TimesFEM/Sesi-Bauru-FEM.html"><img src="../../../CSS/Imagens/logoTimes/Feminino/Sesi.png" alt="img" width="39" height="39" class="d-inline-block align-text-center"> Sesi Bauru</a></li>
+            <li><a class="dropdown-item" href="#"><img src="../../../CSS/Imagens/logoTimes/Feminino/SescFlamengo.png" alt="img" width="36" height="37" class="d-inline-block align-text-center"> Sesc Flamengo</a></li>
+            <li><a class="dropdown-item" href="#"><img src="../../../CSS/Imagens/logoTimes/Minas.png" alt="img" width="34" height="31" class="d-inline-block align-text-center"> Gerdau Minas</a></li>
+            <li><a class="dropdown-item" href="#"><img src="../../../CSS/Imagens/logoTimes/Feminino/Fluminense.png" alt="img" width="35" height="35" class="d-inline-block align-text-center"> Fluminense</a></li>
+            <li><a class="dropdown-item" href="#"><img src="../../../CSS/Imagens/logoTimes/Feminino/praia.png" alt="img" width="34" height="31" class="d-inline-block align-text-center"> Dentil Pria Clube</a></li>
+            <li><a class="dropdown-item" href="#"><img src="../../../CSS/Imagens/logoTimes/Feminino/barueri.png" alt="img" width="35" height="32" class="d-inline-block align-text-center"> Barueri</a></li>
+            <li><a class="dropdown-item" href="#"><img src="../../../CSS/Imagens/logoTimes/Feminino/ABEL MODA VOLEI.png" alt="img" width="31" height="29" class="d-inline-block align-text-center"> Abem Moda</a></li>
+            <li><a class="dropdown-item" href="#"><img src="../../../CSS/Imagens/logoTimes/Feminino/UNILIFE.png" alt="img" width="35" height="30" class="d-inline-block align-text-center"> Unilife</a></li>
+            <li><a class="dropdown-item" href="#"><img src="../../../CSS/Imagens/logoTimes/Feminino/E.C. PINHEIROS.png" alt="img" width="35" height="35" class="d-inline-block align-text-center"> E.C. Pinheiros</a></li>
+            <li><a class="dropdown-item" href="#"><img src="../../../CSS/Imagens/logoTimes/Feminino/BATAVO MACKENZIE.png" alt="img" width="32" height="29" class="d-inline-block align-text-center"> Batavo Mackenzie</a></li>
+            <li><a class="dropdown-item" href="#"><img src="../../../CSS/Imagens/logoTimes/Feminino/OSASCO SÃO CRISTÓVÃO SAÚDE.png" alt="img" width="31" height="29" class="d-inline-block align-text-center"> Osasco</a></li>
+            <li><a class="dropdown-item" href="#"><img src="../../../CSS/Imagens/logoTimes/Feminino/brasilia.png " alt="img" width="31" height="29" class="d-inline-block align-text-center"> Brasília</a></li>
+        </ul>
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="../../../CSS/Imagens/icons/Ícone_calendário.png" alt="logo" width="32" height="30" class="d-inline-block align-text-center">
+          Caléndario
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="../TimesMASC/Sesi-Bauru-MASC.html"><img src="../../../CSS/Imagens/logoLigas/SuperligaMASC.png" alt="img" width="38" height="38" class="d-inline-block align-text-center"> Superliga Masculina</a></li>
+          <li><a class="dropdown-item" href="#"><img src="../../../CSS/Imagens/logoLigas/SuperligaFEMI.png" alt="img" width="38" height="38" class="d-inline-block align-text-center"> Superliga Feminina</a></li>
+          <li><a class="dropdown-item" href="#"><img src="../../../CSS/Imagens/logoLigas/SuperligaItaliana.png" alt="img" width="39" height="39" class="d-inline-block align-text-center"> Campeonato Italiano</a></li>
+          <li><a class="dropdown-item" href="#"><img src="../../../CSS/Imagens/logoLigas/CLUBworldchamps.png" alt="img" width="38" height="38" class="d-inline-block align-text-center"> Club World Championship</a></li>
+          <li><a class="dropdown-item" href="#"><img src="../../../CSS/Imagens/logoLigas/VolleyballChallengerCup.png" alt="img" width="38" height="38" class="d-inline-block align-text-center"> FIVB Volleyball Challenger Cup</a></li>
+        </ul>
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="../../../CSS/Imagens/icons/Ícone_peneiras.png" alt="logo" width="32" height="30" class="d-inline-block align-text-center">
+            Peneiras
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item d-flex" href="../../../HTML/Peneiras/TeladePeneirasSP.html"><img src="../../../CSS/Imagens/Bandeiras/Estados/SP.png" alt="img" width="30" height="30" class="d-inline-block align-text-center">
+              <p class="px-2 m-0 align-bottom">São Paulo</p>
+            </a></li>
+            <li><a class="dropdown-item d-flex" href="#"><img src="../../../CSS/Imagens/Bandeiras/Estados/RJ.png" alt="img" width="30" height="30" class="d-inline-block align-text-center">  
+              <p class="px-2 m-0 align-bottom">Rio de Janeiro</p></a></li>
+            <li><a class="dropdown-item d-flex" href="#"><img src="../../../CSS/Imagens/Bandeiras/Estados/CE.png" alt="img" width="30" height="30" class="d-inline-block align-text-center">  
+              <p class="px-2 m-0 align-bottom">Céara</p></a></li>
+          </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="../../../CSS/Imagens/icons/Icone_Regras.png" alt="logo" width="31" height="31" class="d-inline-block align-text-center"> Regras</a>
+          </li>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+        </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Pesquisa" aria-label="Search">
+              <button class="btn" type="submit"><img src="../../../CSS/Imagens/icons/ícone_Pesquisa.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-center"></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <ul class="nav justify-content-center" style="background-color: rgb(0, 0, 0);">
+        <li class="nav-item">
+            <a class="navbar-brand" href="#">
+                <img src="../../../CSS/Imagens/logoTimes/Feminino/SetPoint__27_-removebg-preview.png" alt="Logo" width="100" height="70" class="d-inline-block align-text-top">
+            </a>
+        </li>
+      </ul>
+
+      <ul class="nav nav-underline justify-content-center" style="background-color: #8c52ff;">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#"></a>
+        </li>
+      </ul><br>
+
+<nav class="navbar" style="background-color: #121212;" data-bs-theme="dark">
+    <div class="container-fluid justify-content-center" >
+      <a class="navbar-brand" href="#">
+        <h1>REGRAS</h1>
+      </a>
+      </div>
+  </nav><br>
+
+  <div class="accordion accordion-flush m m-auto" id="accordionFlushExample" style="width: 22rem;" data-bs-theme="dark">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"><img src="../../CSS/Imagens/icons/Ícone_peneiras.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
+        <p class="px-3 m-0">
+          Objetivo do jogo
+        </p>
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">O objetivo é marcar pontos, enviando a bola para o chão no campo adversário ou forçando o time adversário a cometer erros.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"><img src="../../CSS/Imagens/icons/Equipes.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center ">
+        <p class="px-3 m-0">
+          Equipes
+        </p>
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Cada equipe é composta por seis jogadores em quadra ao mesmo tempo.</div>
+      </div>
+    </div>
+    
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour"><img src="../../CSS/Imagens/icons/Pontos.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center ">
+        <p class="px-3 m-0">
+          Pontuação
+        </p>
+        </button>
+      </h2>
+      <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">O jogo é dividido em sets. Para vencer um set, uma equipe deve marcar 25 pontos (com exceção do 5º set em alguns casos, que pode ser jogado até 15 pontos).
+          Uma equipe deve vencer 1 set por pelo menos 2 pontos de diferença. Em caso de empate em sets, um set adicional é jogado (decisivo).
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive"><img src="../../CSS/Imagens/icons/Começodejogo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center ">
+        <p class="px-3 m-0">
+          Inicio de Jogo
+        </p>
+        </button>
+      </h2>
+      <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">O jogo se inicia com um jogador fazendo o saque a partir da linha de fundo da quadra, tentando mandar a bola para o campo adversário.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix"><img src="../../CSS/Imagens/icons/Toques.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center ">
+        <p class="px-3 m-0">
+          Toques
+        </p>
+        </button>
+      </h2>
+      <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body"><h1>4x <img src="../../../CSS/Imagens/icons/Ouro.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-center ">Os jogadores não podem tocar na rede durante o jogo.
+          A bola também não pode tocar na rede durante um saque, a não ser que passe por cima da rede e caia no campo adversário.</div>
+          
+      </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven"><img src="../../CSS/Imagens/icons/Rotação.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center ">
+          <p class="px-3 m-0">
+            Rotação de Jogadores
+          </p>
+          </button>
+        </h2>
+        <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Os jogadores devem girar no sentido horário após cada ponto marcado, mantendo a mesma ordem.
+            Isso garante que todos os jogadores tenham a oportunidade de atuar em todas as posições.
+        </div>
+      </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight"><img src="../../CSS/Imagens/icons/Toques.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center ">
+          <p class="px-3 m-0">
+            Toques de Rede
+          </p>
+          </button>
+        </h2>
+        <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Os jogadores não podem tocar na rede durante o jogo.
+            A bola também não pode tocar na rede durante um saque, a não ser que passe por cima da rede e caia no campo adversário</div>
+            
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine"><img src="../../CSS/Imagens/icons/Falta.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center ">
+          <p class="px-3 m-0">
+            Faltas e Erros
+          </p>
+          </button>
+        </h2>
+        <div id="flush-collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Faltas e erros incluem, entre outros, tocar na bola mais de três vezes, pisar na linha de fundo durante um saque, e invadir o espaço do adversário.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen"><img src="../../CSS/Imagens/icons/Substituição.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center ">
+          <p class="px-3 m-0">
+            Substituições
+          </p>
+          </button>
+        </h2>
+        <div id="flush-collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Cada equipe tem um número limitado de substituições permitidas durante o jogo.
+            As substituições só podem ocorrer quando o jogo está parado.</div>
+        </div>
+  </div>
+<br><br><br>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+  
+  <div class="accordion accordion-flush m m-auto" id="accordionFlushExample" style="width: 26.5rem;" data-bs-theme="dark">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"><img src="../../CSS/Imagens/icons/IconeTimes.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
+        <p class="px-3 m-0">
+          Times Masculino
+        </p>
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          
+            <a class="dropdown-item d-flex" href="../Times/TimesMASC/Sesi-Bauru-MASC.html"><img src="../../CSS/Imagens/logoTimes/Sesi Bauru Masc.png" alt="img" width="35" height="32" class="d-inline-block align-text-center"><p class="px-3 align-text-center">Sesi Bauru</p></a>
+  
+            <a class="dropdown-item d-flex" href="#"><img src="../../CSS/Imagens/logoTimes/Sada volei.png" alt="img" width="35" height="35" class="d-inline-block align-text-center"><p class="px-3 align-text-center">Sada Cruzeiro</p></a>
+  
+            <a class="dropdown-item d-flex" href="#"><img src="../../CSS/Imagens/logoTimes/Minas.png" alt="img" width="34" height="31" class="d-inline-block align-text-center">
+              <p class="px-3 align-text-center">Itambé Minas</p></a>
+  
+            <a class="dropdown-item d-flex" href="#"><img src="../../CSS/Imagens/logoTimes/FarmaCondeVôlei.png" alt="img" width="35" height="31" class="d-inline-block align-text-center"><p class="px-3 align-text-center">Farma Conde/São José</p></a>
+  
+            <a class="dropdown-item d-flex" href="#"><img src="../../CSS/Imagens/logoTimes/Joinville.png" alt="img" width="34" height="31" class="d-inline-block align-text-center"><p class="px-3 align-text-center">Joinville</p></a>
+            
+            <a class="dropdown-item d-flex" href="#"><img src="../../CSS/Imagens/logoTimes/guarulhosVolei.png" alt="img" width="35" height="32" class="d-inline-block align-text-center"><p class="px-3 align-text-center">Vedacit Guaraulhos</p></a>
+            
+            <a class="dropdown-item d-flex" href="#"><img src="../../CSS/Imagens/logoTimes/Araguari.png" alt="img" width="31" height="29" class="d-inline-block align-text-center"><p class="px-3 align-text-center">Araguari Vôlei</p></a>
+            
+            <a class="dropdown-item d-flex" href="#"><img src="../../CSS/Imagens/logoTimes/Suzano.png" alt="img" width="35" height="30" class="d-inline-block align-text-center"><p class="px-3 align-text-center">Suzano</p></a>
+            
+            <a class="dropdown-item d-flex" href="#"><img src="../../CSS/Imagens/logoTimes/APAN.png" alt="img" width="35" height="35" class="d-inline-block align-text-center"><p class="px-3 align-text-center">APAN/Blumenau</p></a>
+            
+            <a class="dropdown-item d-flex" href="#"><img src="../../CSS/Imagens/logoTimes/volei renata.png" alt="img" width="32" height="29" class="d-inline-block align-text-center"><p class="px-3 align-text-center">Vôlei Renata</p></a>
+            
+            <a class="dropdown-item d-flex" href="#"><img src="../../CSS/Imagens/logoTimes/Goias.webp" alt="img" width="31" height="29" class="d-inline-block align-text-center"><p class="px-3 align-text-center">Goiás</p></a>
+            
+            <a class="dropdown-item d-flex" href="#"><img src="../../CSS/Imagens/logoTimes/neurologia.png" alt="img" width="31" height="29" class="d-inline-block align-text-center"><p class="px-3 align-text-center">Neurologia Ativa/Goiânia</p></a>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"><img src="../../CSS/Imagens/icons/IconeTimes.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center ">
+        <p class="px-3 m-0">
+          Times Feminino
+        </p>
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <a class="dropdown-item d-flex" href="../Times/TimesFEM/Sesi-Bauru-FEM.html"><img src="../../CSS/Imagens/logoTimes/Feminino/Sesi.png" alt="img" width="39" height="39" class="d-inline-block align-text-center">
+            <p class="px-3 align-text-center">Sesi Bauru</p></a></li>
+  
+          <a class="dropdown-item d-flex" href="#"><img src="../../CSS/Imagens/logoTimes/Feminino/SescFlamengo.png" alt="img" width="36" height="37" class="d-inline-block align-text-center">
+            <p class="px-3 align-text-center">Sesc Flamengo</p></a></li>
+  
+          <a class="dropdown-item d-flex" href="#"><img src="../../CSS/Imagens/logoTimes/Minas.png" alt="img" width="34" height="31" class="d-inline-block align-text-center">
+            <p class="px-3 align-text-center">Gerdau Minas</p></a></li>
+          
+          <a class="dropdown-item d-flex" href="#"><img src="../../CSS/Imagens/logoTimes/Feminino/Fluminense.png" alt="img" width="35" height="35" class="d-inline-block align-text-center">
+            <p class="px-3 align-text-center">Fluminense</p></a></li>
+  
+          <a class="dropdown-item d-flex" href="#"><img src="../../CSS/Imagens/logoTimes/Feminino/praia.png" alt="img" width="34" height="31" class="d-inline-block align-text-center">
+            <p class="px-3 align-text-center">Dentil Pria Clube</p></a></li>
+  
+          <a class="dropdown-item d-flex" href="#"><img src="../../CSS/Imagens/logoTimes/Feminino/barueri.png" alt="img" width="35" height="32" class="d-inline-block align-text-center">
+            <p class="px-3 align-text-center">Barueri</p></a></li>
+  
+          <a class="dropdown-item d-flex" href="#"><img src="../../CSS/Imagens/logoTimes/Feminino/ABEL MODA VOLEI.png" alt="img" width="31" height="29" class="d-inline-block align-text-center">
+            <p class="px-3 align-text-center">Abem Moda</p></a></li>
+  
+          <a class="dropdown-item d-flex" href="#"><img src="../../CSS/Imagens/logoTimes/Feminino/UNILIFE.png" alt="img" width="35" height="30" class="d-inline-block align-text-center">
+            <p class="px-3 align-text-center">Unilife</p></a></li>
+  
+          <a class="dropdown-item d-flex" href="#"><img src="../../CSS/Imagens/logoTimes/Feminino/E.C. PINHEIROS.png" alt="img" width="35" height="35" class="d-inline-block align-text-center">
+            <p class="px-3 align-text-center">E.C. Pinheiros</p></a></li>
+  
+          <a class="dropdown-item d-flex" href="#"><img src="../../CSS/Imagens/logoTimes/Feminino/BATAVO MACKENZIE.png" alt="img" width="32" height="29" class="d-inline-block align-text-center">
+            <p class="px-3 align-text-center">Batavo Mackenzie</p></a></li>
+  
+          <a class="dropdown-item d-flex" href="#"><img src="../../CSS/Imagens/logoTimes/Feminino/OSASCO SÃO CRISTÓVÃO SAÚDE.png" alt="img" width="31" height="29" class="d-inline-block align-text-center">
+            <p class="px-3 align-text-center">Osasco</p></a></li>
+  
+          <a class="dropdown-item d-flex" href="#"><img src="../../CSS/Imagens/logoTimes/Feminino/brasilia.png " alt="img" width="31" height="29" class="d-inline-block align-text-center">
+            <p class="px-3 align-text-center">Brasília</p></a></li>
+        </div>
+      </div>
+    </div>
+    
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour"><img src="../../CSS/Imagens/icons/Ícone_calendário.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center ">
+        <p class="px-3 m-0">
+          Caléndario
+        </p>
+        </button>
+      </h2>
+      <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <a class="dropdown-item" href="../Calendario/calendarioSUPERLIGAmasc.html"><img src="../../CSS/Imagens/logoLigas/SuperligaMASC.png" alt="img" width="38" height="38" class="d-inline-block align-text-center"> Superliga Masculina</a>
+          <a class="dropdown-item" href="../Calendario/calendarioSUPERLIGAfem.html"><img src="../../CSS/Imagens/logoLigas/SuperligaFEMI.png" alt="img" width="38" height="38" class="d-inline-block align-text-center"> Superliga Feminina</a>
+          <a class="dropdown-item" href="#"><img src="../../CSS/Imagens/logoLigas/SuperligaItaliana.png" alt="img" width="39" height="39" class="d-inline-block align-text-center"> Campeonato Italiano</a>
+          <a class="dropdown-item" href="#"><img src="../../CSS/Imagens/logoLigas/CLUBworldchamps.png" alt="img" width="38" height="38" class="d-inline-block align-text-center"> Club World Championship</a>
+          <a class="dropdown-item" href="#"><img src="../../CSS/Imagens/logoLigas/VolleyballChallengerCup.png" alt="img" width="38" height="38" class="d-inline-block align-text-center"> FIVB Volleyball Challenger Cup</a>
+  
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive"><img src="../../CSS/Imagens/icons/Ícone_peneiras.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center ">
+        <p class="px-3 m-0">
+          Peneiras
+        </p>
+        </button>
+      </h2>
+      <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <a class="dropdown-item d-flex" href="../../../HTML/Peneiras/TeladePeneirasSP.html"><img src="../../../CSS/Imagens/Bandeiras/Estados/SP.png" alt="img" width="30" height="30" class="d-inline-block align-text-center">
+            <p class="px-2 m-0 align-bottom">São Paulo</p>
+          </a></li>
+          <a class="dropdown-item d-flex" href="#"><img src="../../../CSS/Imagens/Bandeiras/Estados/RJ.png" alt="img" width="30" height="30" class="d-inline-block align-text-center">  
+            <p class="px-2 m-0 align-bottom">Rio de Janeiro</p></a>
+          <a class="dropdown-item d-flex" href="#"><img src="../../../CSS/Imagens/Bandeiras/Estados/CE.png" alt="img" width="30" height="30" class="d-inline-block align-text-center">  
+            <p class="px-2 m-0 align-bottom">Céara</p></a>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven"><img src="../../CSS/Imagens/icons/Icone_Regras.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center ">
+          <p class="px-3 m-0">
+            Regras Básicas
+          </p>
+          </button>
+        </h2>
+        <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <div class="d-grid gap-2">
+              O vôlei é um jogo entre duas equipes de seis jogadores, onde o objetivo é fazer a bola tocar o chão no campo adversário. Cada time tem até 3 toques para devolver a bola e deve rotacionar após o saque. O time que vencer 3 sets ganha a partida.
+              <a href="../TelaRegras/regra.html" class="btn btn-style" style="background-color: #8c52ff;" type="button"><b>Saber Mais</b></a>
+           </div>
+        </div>
+      </div>
+      </div>
+  </div>
+  <hr style="border: 1px solid #ccc; margin: 0;">
+  <footer class="text-white py-4" style="background-color: #212529;">
+    <div class="container">
+        <div class="col-md-6 text-center">
+          <h5>Siga-nos no Instagram</h5>
+          <a href="https://www.instagram.com/setpoint_7/" target="_blank" style="color: #8c52ff; text-decoration: none;">
+            <img src="../../CSS/Imagens/icons/logotipo-do-instagram.png" alt="Instagram" width="20" height="20" class="d-inline-block align-text-center">
+            @SetPoint_7
+          </a>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <small>&copy; 2024 SetPoint. Todos os direitos reservados.</small>
+      </div>
+    </div>
+  </footer>
+</html>
